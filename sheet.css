@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(71, 50, 71);
+  }
+  h1 {
+    background-image: url(resource/gif/head_image_1.gif);
+    color: transparent;
+    font-family:'curlz MT';
+    font-size: 70px;
+    font-style: bold;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  p {
+    color: rgb(116, 98, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 160%;
+    border: 2px solid tomato;
+    padding: 10px;
+    margin: 15px;
+  }
