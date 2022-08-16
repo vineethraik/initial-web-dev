@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    width: 100%;
+    background-color: rgba(220, 166, 99, 0.616);
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans';
+}
+main{
+    margin: 15px 15px;
+    padding: 0;
+    background-color: rgba(237, 134, 0, 0.756);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* title section */
+
+.header_class{
+    width:100%;
+    padding:20px 0;
+    color: rgb(125, 73, 6);
+    overflow: hidden;
+}
+
+.header_class h1{
+    margin-bottom: -10px;
+}
+
+/*image section*/
+
+figure{
+    margin:0 0 30px 0;
+}
+
+figure img{
+    
+    display: block;
+    margin:0 auto;
+    width:50%;
+    height: auto;
+    max-width: 350px;
+    
+
+}
+
+figcaption{
+    color: rgb(91, 53, 3);
+}
+
+/* Tribute info section*/
+/*normal content*/
+
+.timeline{
+    position: relative;
+    background-color: rgb(101, 71, 32);
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.container{
+    position: relative;
+    background-color: transparent;
+    width: 50%;
+}
+.content{
+    
+    padding: 0px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.left .content{
+    margin: 2px 35px 2px 10px;
+}
+
+.right .content{
+    margin: 2px 10px 2px 35px;
+}
+
+.content h2{
+    margin: 0 0 -10px 0;
+}
+
+.content p{
+    margin-bottom: 10px;
+}
+/*timeline line*/
+
+.timeline::after{
+    content: " ";
+    position: absolute;
+    width: 10px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+}
+
+/* arrow  */
+.left::before{
+    content: "";
+    position: absolute;
+    margin-right: 15px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 10px solid white;
+    border: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    right: 0%;
+    top:10px;
+}
+
+.right::before{
+    content: "";
+    position: absolute;
+    margin-left: 15px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border: 10px solid white;
+    border: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    left: 0%;
+    top:10px;
+}
+
+/*time point*/
+
+.container::after{
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    margin: 0;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: rgb(7, 56, 64);
+    border: 5px solid rgba(60, 178, 150, 0.557);
+    right: -5px;
+    top:10px;
+    
+}
+
+.right::after{
+    left:-15px;
+}
+
+/*container*/
+.left{
+    left: 0;
+}
+
+.right{
+    left: 50%;  
+}
+
+/* note section*/
+
+.note{
+    background-color: rgb(205, 98, 22);
+    margin: 10px 10vw;
+    border-radius: 5px;
+    padding:5px;
+}
+
+
+
+
+/* small screens */
+@media screen and (max-width: 600px){
+.timeline::after{
+    left:10px;
+}
+
+.container{
+    width:100%
+}
+
+.right{
+    left:0;
+}
+
+.left .content{
+    margin: 10px 10px 10px 35px;
+}
+
+.left::after ,.right::after{
+    left:-5px;
+}
+
+.left::before{
+    left:16px;
+    z-index: 1;
+    border:10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+.right::before{
+    left:1px;
+}
+
+.note
+{
+    margin: 10px;
+}
+}
+

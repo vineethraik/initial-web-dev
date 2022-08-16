@@ -1,54 +1,50 @@
-head{
+body {
+  width: 100%;
+  margin: 0;
   background-color: aqua;
 }
-body {
-    background-color: rgb(71, 50, 71);
-  }
-  h1 {
-    background-image: url(resource/gif/head_image_1.gif);
-    color: transparent;
-    font-family:'curlz MT';
-    font-size: 70px;
-    font-style: bold;
-    background-size: cover;
-    background-position-x: right;
-    background-position-y: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
-  #para1{
-    color: rgb(116, 98, 0);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 160%;
-    border: 2px solid tomato;
-    padding: 10px;
-    margin: 15px;
-  }
 
-  /* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(13, 71, 62);
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #ffa4a4;
+h1, h2{
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: rgb(175, 2, 2);
-  color: black;
+.container1{
+  height:500px;
+  width: 100%;
+  
+  
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #8ea49b;
-  color: white;
+.intro{
+  /*background: linear-gradient(120deg,rgb(42, 248, 166),rgb(184, 75, 252)); /**/
+  background-color: rgba(128, 189, 54, 0.5);
+  margin: auto;
+  
+}
+ 
+
+.intro h1{
+  font-size: 60px;
+}
+.intro h2{
+  font-size: 40px;
+  /*
+  font-family: monospace;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: -45px;
+  /**/
+}
+
+
+.intro_heading{
+  padding: 10px;
+
+}
+/**/
+
+.about{
+  height: 500px;
+  width: 100%;
+  /*background-color: rgba(235, 109, 109, 0.5);/**/
 }
