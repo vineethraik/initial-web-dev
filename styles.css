@@ -20,6 +20,7 @@ a{
 #one{
   width: 20vw;
   height: 30vh;
+  
   margin: 100px auto;
   background: radial-gradient(#0ea484,#1c70b9,#0ea484);
 }
